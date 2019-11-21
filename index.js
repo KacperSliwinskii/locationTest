@@ -33,7 +33,8 @@ function successPosition(position) {
 	
 
 	//lets get some stuff out of the position object
-	var time = position.timestamp;
+	var time = new Date(position.timestamp);
+    var date = time.toDateString();
 	var latitude = position.coords.latitude;
     var longitude = position.coords.longitude;
 	
